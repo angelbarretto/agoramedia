@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-bg: #ffffff;
+  --brand-surface: #fafafa;
+  --brand-text: #141414;
+  --brand-text-muted: #606062;
+  --brand-border: #e9ecef;
+  --brand-accent: #a1a1a1;
+  --brand-accent-hover: #818181;
+  --brand-footer-bg: #fafafa;
+  --brand-footer-text: #141414;
+
+  --badge-rose: #b39295;
+  --badge-teal: #89afb5;
+  --badge-sage: #8eb096;
+  --badge-beige: #cac6b4;
+  --badge-purple: #a2789b;
+  --badge-tan: #ae856c;
+}
+
+.dark {
+  --brand-bg: #141414;
+  --brand-surface: #1c1c1c;
+  --brand-text: #ffffff;
+  --brand-text-muted: rgba(255, 255, 255, 0.7);
+  --brand-border: rgba(255, 255, 255, 0.1);
+  --brand-accent: #ae856c;
+  --brand-accent-hover: #a4a4a5;
+  --brand-footer-bg: #1c1c1c;
+  --brand-footer-text: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  background: var(--brand-bg);
+  color: var(--brand-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .display {
+  font-family: 'Syne', 'Poppins', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--brand-text);
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--brand-accent); }
+
+:focus-visible {
+  outline: 2px solid var(--brand-accent);
+  outline-offset: 2px;
+}
+
+/* Editorial article prose */
+.prose-agora {
+  color: var(--brand-text);
+  font-size: 1.0625rem;
+  line-height: 1.72;
+}
+.prose-agora h2 {
+  font-size: 1.625rem;
+  line-height: 1.25;
+  margin-top: 2.25rem;
+  margin-bottom: 0.9rem;
+}
+.prose-agora h3 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
+}
+.prose-agora p { margin-bottom: 1.1rem; }
+.prose-agora ul, .prose-agora ol { margin: 0.6rem 0 1.2rem 1.4rem; }
+.prose-agora ul { list-style: disc; }
+.prose-agora ol { list-style: decimal; }
+.prose-agora li { margin-bottom: 0.4rem; }
+.prose-agora blockquote {
+  border-left: 3px solid var(--brand-accent);
+  padding-left: 1rem;
+  color: var(--brand-text-muted);
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+.prose-agora img {
+  border-radius: 6px;
+  margin: 1.25rem 0;
+  max-width: 100%;
+  height: auto;
+}
+.prose-agora a {
+  color: var(--brand-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-agora a:hover { color: var(--brand-text); }
+.prose-agora strong { font-weight: 600; }
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
