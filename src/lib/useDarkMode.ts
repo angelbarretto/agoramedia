@@ -7,8 +7,8 @@ export function useDarkMode() {
     if (typeof window === 'undefined') return false;
     const stored = window.localStorage.getItem(KEY);
     if (stored === 'dark') return true;
-    if (stored === 'light') return false;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // Default to light to match theagoramedia.com; ignore OS dark-mode preference.
+    return false;
   });
 
   useEffect(() => {

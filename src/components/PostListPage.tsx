@@ -43,7 +43,7 @@ export default function PostListPage({
         {subtitle && <p className="mt-3 text-brand-muted max-w-2xl">{subtitle}</p>}
       </header>
 
-      <div className={`grid gap-10 ${showSidebar ? 'lg:grid-cols-[2fr_1fr]' : ''}`}>
+      <div className={`grid gap-10 lg:gap-12 ${showSidebar ? 'lg:grid-cols-[minmax(0,1fr)_312px]' : ''}`}>
         <div>
           {heroBefore}
           <SectionLabel>The Latest</SectionLabel>
