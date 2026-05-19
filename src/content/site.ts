@@ -8,7 +8,7 @@ export const site = {
   contactEmail: 'info@theagoramedia.com',
   contactPhone: '+1 424 384 7249',
   regions: ['Africa', 'Asia', 'Australia', 'North America', 'South America'],
-  copyrightLine: '\u00a9 The Agora Media\u2122 2025',
+  copyrightLine: '\u00a9 The Agora Media\u2122 2026',
   nav: [
     { label: 'Home',    href: '/' },
     { label: 'Media',   href: '/events' },
