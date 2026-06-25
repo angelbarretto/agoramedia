@@ -58,14 +58,6 @@ export const authors: Author[] = [
     url: ``,
   },
   {
-    id: 9,
-    slug: `rini`,
-    name: `Dr Rini Chatterjee`,
-    description: ``,
-    avatar: `https://theagoramedia.com/wp-content/uploads/2025/08/dr-rini-chatterjee_avatar-96x96.jpeg`,
-    url: ``,
-  },
-  {
     id: 1,
     slug: `angelnoworries-fi`,
     name: `Elizabeth Angel`,

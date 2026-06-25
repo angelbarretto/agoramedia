@@ -34,11 +34,6 @@ export const contributors: Contributor[] = [
     authorSlug: `nisha`,
   },
   {
-    name: `Dr Rini Chatterjee`,
-    focus: `health and wellness`,
-    authorSlug: `rini`,
-  },
-  {
     name: `Elizabeth Angel`,
     focus: `tech, defense, health`,
     authorSlug: `angelnoworries-fi`,
